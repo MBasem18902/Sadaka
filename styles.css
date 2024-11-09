@@ -1,0 +1,157 @@
+body {
+  font-family: 'Amiri', serif;
+  background-color: #f0f4f3;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.main-text {
+  text-align: center;
+  margin-top: 20px;
+  padding: 0 20px;
+}
+
+.main-text h2 {
+  font-size: 1.2em;
+  color: #555;
+  margin: 0;
+}
+
+.main-text h1 {
+  font-size: 2em;
+  color: #333;
+  margin: 10px 0 20px;
+  font-weight: bold;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.card {
+  width: 100%;
+  padding: 15px 15px;
+  gap: 32px;
+  background-color: #eaf8f3;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  border: 2px solid #3cab90;
+  border-radius: 12px;
+  text-align: center;
+  margin-bottom: 15px;
+  transition: opacity 0.5s ease;
+}
+
+.card h3 {
+  font-size: 22px;
+  font-weight: bold;
+  color: #333;
+  margin-top: 10px;
+  padding: 0 24px;
+}
+
+.card .count {
+  font-size: 16px;
+  color: #555;
+  margin: 10px 0;
+  line-height: 1.5;
+  padding: 0 24px;
+}
+
+.card p {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  margin: 10px 0;
+  line-height: 1.5;
+  padding: 0 24px;
+}
+
+.button {
+  font-size: 25px;
+  color: #3cab90;
+  font-weight: bold;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+.button:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .main-text h1 {
+    font-size: 1.5em;
+  }
+
+  .main-text h2 {
+    font-size: 1em;
+  }
+
+  .card {
+    margin: 10px auto;
+    padding: 10px;
+  }
+
+  .card h3 {
+    font-size: 20px;
+  }
+
+  .card .count,
+  .card p {
+    font-size: 14px;
+  }
+
+  .container {
+    padding: 10px;
+  }
+
+  .button {
+    font-size: 12px;
+  }
+}
+
+/* For screens smaller than 480px (mobile phones) */
+@media (max-width: 480px) {
+  .main-text h1 {
+    font-size: 1.2em;
+  }
+
+  .card {
+    width: 90%;
+    padding: 8px;
+    margin:10px auto;
+  }
+
+  .card h3 {
+    font-size: 18px;
+  }
+
+  .card .count,
+  .card p {
+    font-size: 12px;
+  }
+
+  .container {
+    padding: 5px;
+  }
+
+  .button {
+font-size: 15px;
+        padding: 10px;
+  }
+}
